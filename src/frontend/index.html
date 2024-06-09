@@ -1,104 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Verwaltungs Software</title>
-    <link rel="stylesheet" href="../styles/material.min.css">
+    <link rel="stylesheet" href="../styles/material.min.css" />
     <script src="../styles/material.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="../styles/index.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
 
-<body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
-mdl-layout--fixed-tabs">
-        <header class="mdl-layout__header">
-            <div class="mdl-layout__header-row">
-                <span class="mdl-layout-title">Verwaltungs Software</span>
-            </div>
-            <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-                <a href="./index.html" class="mdl-layout__tab is-active">Kunde eintragen</a>
-                <a href="./display.html" class="mdl-layout__tab">Kunde anzeigen</a>
-                <a href="./edit.html" class="mdl-layout__tab">Kunde bearbeiten</a>
-            </div>
-        </header>
-        <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Verwaltungs Software</span>
-            <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="./index.html">Kunde eintragen</a>
-                <a class="mdl-navigation__link" href="./display.html">Kunde anzeigen</a>
-                <a class="mdl-navigation__link" href="./edit.html">Kunde bearbeiten</a>
-              </nav>
+  <body>
+    <div
+      class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs"
+    >
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Verwaltungs Software</span>
         </div>
-        <main class="mdl-layout__content">
-            <div class="input-container">
-                <h6 class="sub-title">KUNDE</h6>
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="Vorname">
-                    <label class="mdl-textfield__label" for="Vorname">Vorname</label>
-                </div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+          <a href="./index.html" class="mdl-layout__tab is-active"
+            >Kunde eintragen</a
+          >
+          <a href="./display.html" class="mdl-layout__tab">Kunde anzeigen</a>
+          <a href="./edit.html" class="mdl-layout__tab">Kunde bearbeiten</a>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Verwaltungs Software</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="./index.html"
+            >Kunde eintragen</a
+          >
+          <a class="mdl-navigation__link" href="./display.html"
+            >Kunde anzeigen</a
+          >
+          <a class="mdl-navigation__link" href="./edit.html"
+            >Kunde bearbeiten</a
+          >
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="input-container">
+          <h4 class="sub-title">KUNDE</h4>
+          <div
+            class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+          >
+            <input class="mdl-textfield__input" type="text" id="Vorname" />
+            <label class="mdl-textfield__label" for="Vorname">Vorname</label>
+          </div>
 
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="Nachname">
-                    <label class="mdl-textfield__label" for="Nachname">Nachname</label>
-                </div>
+          <div
+            class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+          >
+            <input class="mdl-textfield__input" type="text" id="Nachname" />
+            <label class="mdl-textfield__label" for="Nachname">Nachname</label>
+          </div>
 
-                <div class="mdl-textfield mdl-js-textfield">
-                    <input class="mdl-textfield__input" type="date" id="GEB">
-                </div>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="date" id="GEB" />
+          </div>
 
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="Tel">
-                    <label class="mdl-textfield__label" for="Tel">Tel.</label>
-                </div>
+          <div
+            class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+          >
+            <input class="mdl-textfield__input" type="text" id="Tel" />
+            <label class="mdl-textfield__label" for="Tel">Tel.</label>
+          </div>
 
-                <div class="mdl-textfield mdl-js-textfield">
-                    <input class="mdl-textfield__input" type="file" id="photo">
-                </div>
-            </div>
+          <div
+            class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+          >
+            <input class="mdl-textfield__input" type="text" id="mail" />
+            <label class="mdl-textfield__label" for="mail">Email</label>
+          </div>
 
-            <div class="input-container">
-                <h6 class="sub-title">ADRESSE</h6>
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="city">
-                    <label class="mdl-textfield__label" for="city">Stadt</label>
-                </div>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="file" id="photo" />
+          </div>
+        </div>
 
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="plz">
-                    <label class="mdl-textfield__label" for="plz">PLZ.</label>
-                </div>
+        <div class="input-container">
+          <h4 class="sub-title">ADRESSE</h4>
+          <div
+            class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+          >
+            <input class="mdl-textfield__input" type="text" id="city" />
+            <label class="mdl-textfield__label" for="city">Stadt</label>
+          </div>
 
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="adresse">
-                    <label class="mdl-textfield__label" for="adresse">Adresse</label>
-                </div>
+          <div
+            class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+          >
+            <input class="mdl-textfield__input" type="text" id="plz" />
+            <label class="mdl-textfield__label" for="plz">PLZ.</label>
+          </div>
 
-            </div>
+          <div
+            class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+          >
+            <input class="mdl-textfield__input" type="text" id="adresse" />
+            <label class="mdl-textfield__label" for="adresse">Adresse</label>
+          </div>
+        </div>
 
-            <div class="input-container">
-                <h6 class="sub-title">BEHANDLUNG</h6>
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="payment">
-                    <label class="mdl-textfield__label" for="payment">Zahlung</label>
-                </div>
-                
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <textarea class="mdl-textfield__input" type="text" rows= "3" id="treatment" ></textarea>
-                    <label class="mdl-textfield__label" for="treatment">Behandlung</label>
-                </div>
-            </div>
+        <div class="input-container">
+          <h4 class="sub-title">BEHANDLUNG</h4>
+          <div
+            class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+          >
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="sample2"
+            />
+            <label class="mdl-textfield__label" for="sample2">Zahlung</label>
+            <span class="mdl-textfield__error">Nur Zahlen eingeben</span>
+          </div>
 
-            <div class="input-container btn-margin">
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="submit">
-                    SPEICHERN
-                </button>
-        </main>
+          <div
+            class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+          >
+            <textarea
+              class="mdl-textfield__input"
+              type="text"
+              rows="3"
+              id="treatment"
+            ></textarea>
+            <label class="mdl-textfield__label" for="treatment"
+              >Behandlung</label
+            >
+          </div>
+        </div>
+
+        <div class="input-container btn-margin">
+          <button
+            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            id="submit"
+          >
+            SPEICHERN
+          </button>
+        </div>
+      </main>
     </div>
+  </body>
 
-</body>
-
-<script src="app.js"></script>
-
+  <script src="app.js"></script>
 </html>

@@ -1,45 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Verwaltungs Software</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"
+    />
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-</head>
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="./lightbox/lightbox.css" />
+  </head>
 
-<body>
-    <!-- Simple header with fixed tabs. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
-mdl-layout--fixed-tabs">
-        <header class="mdl-layout__header">
-            <div class="mdl-layout__header-row">
-                <!-- Title -->
-                <span class="mdl-layout-title">Verwaltungs Software</span>
-            </div>
-            <!-- Tabs -->
-            <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-                <a href="./index.html" class="mdl-layout__tab">Kunde eintragen</a>
-                <a href="./display.html" class="mdl-layout__tab is-active">Kunde anzeigen</a>
-                <a href="./edit.html" class="mdl-layout__tab">Kunde bearbeiten</a>
-            </div>
-        </header>
-        <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Verwaltungs Software</span>
-            <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="./index.html">Kunde eintragen</a>
-                <a class="mdl-navigation__link" href="./display.html">Kunde anzeigen</a>
-                <a class="mdl-navigation__link" href="./edit.html">Kunde bearbeiten</a>
-              </nav>
+  <body>
+    <div
+      class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs"
+    >
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Verwaltungs Software</span>
         </div>
-        <main class="mdl-layout__content">
-            DISPLAY
-        </main>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+          <a href="./index.html" class="mdl-layout__tab">Kunde eintragen</a>
+          <a href="./display.html" class="mdl-layout__tab is-active"
+            >Kunde anzeigen</a
+          >
+          <a href="./edit.html" class="mdl-layout__tab">Kunde bearbeiten</a>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Verwaltungs Software</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="./index.html"
+            >Kunde eintragen</a
+          >
+          <a class="mdl-navigation__link" href="./display.html"
+            >Kunde anzeigen</a
+          >
+          <a class="mdl-navigation__link" href="./edit.html"
+            >Kunde bearbeiten</a
+          >
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="input-container">
+          <h4 class="sub-title">KUNDEN ANZEIGE</h4>
+          <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+            <thead>
+              <tr>
+                <th class="mdl-data-table__cell--non-numeric">Vorname</th>
+                <th class="mdl-data-table__cell--non-numeric">Nachname</th>
+                <th class="mdl-data-table__cell--non-numeric">Geburtsdatum</th>
+                <th class="mdl-data-table__cell--non-numeric">Telefonnummer</th>
+                <th class="mdl-data-table__cell--non-numeric">E-Mail</th>
+                <th>Bild</th>
+                <th class="mdl-data-table__cell--non-numeric">Stadt</th>
+                <th class="mdl-data-table__cell--non-numeric">PLZ</th>
+                <th class="mdl-data-table__cell--non-numeric">Adresse</th>
+                <th>Zahlung</th>
+                <th class="mdl-data-table__cell--non-numeric">Behandlung</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Khnifes</td>
+                <td>Gabriela</td>
+                <td>24.01.2005</td>
+                <td>06605722156</td>
+                <td>gabriela@gmail.com</td>
+                <td>
+                  <a
+                    class="example-image-link"
+                    href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg"
+                    data-lightbox="example-1"
+                    ><img
+                      class="example-image"
+                      src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg"
+                      alt="image-1"
+                  /></a>
+                </td>
+                <td>Wien</td>
+                <td>1100</td>
+                <td>Quellenstraße 51</td>
+                <td>50€</td>
+                <td>Haare schneiden</td>
+              </tr>
+
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Doe</td>
+                <td>John</td>
+                <td>01.01.1990</td>
+                <td>1234567890</td>
+                <td>john.doe@example.com</td>
+                <td>
+                  <button
+                    type="button"
+                    class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent show-modal"
+                  >
+                    BILD ANZEIGEN
+                  </button>
+                </td>
+                <td>Linz</td>
+                <td>4020</td>
+                <td>Wienerstraße 25</td>
+                <td>100€</td>
+                <td>Kosmetik</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
     </div>
-
-</body>
-
-<script src="app.js"></script>
-
+  </body>
+  <script src="./lightbox/lightbox.js"></script>
+  <script src="display.js"></script>
 </html>

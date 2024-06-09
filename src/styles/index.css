@@ -13,3 +13,8 @@
 .btn-margin{
     margin-bottom: 2em;
 }
+
+.dialog-container{
+    margin: auto;
+    text-align: center;
+}
